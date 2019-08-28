@@ -1,0 +1,67 @@
+{
+  "name": "xwp-test",
+  "version": "1.0.0",
+  "description": "XWP Test",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development gulp --gulpfile $(npm root)/undercurrent/src/index.js --cwd $(npm prefix) --workflow theme",
+    "prod": "cross-env NODE_ENV=production gulp --gulpfile $(npm root)/undercurrent/src/index.js --cwd $(npm prefix) --workflow theme"
+  },
+  "engines": {
+    "node": ">=8.11.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:xwp/frontend-test.git"
+  },
+  "author": "",
+  "license": "GNU v3",
+  "bugs": {
+    "url": "https://github.com/xwp/frontend-test/issues"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 4%",
+    "not dead"
+  ],
+  "workflows": {
+    "component": {
+      "cwd": "assets",
+      "schema": "theme",
+      "tasks": {
+        "js": {
+          "entry": {
+            "main": "./main.js"
+          }
+        }
+      }
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-xwp/scss",
+    "plugins": [
+      "stylelint-no-unsupported-browser-features"
+    ],
+    "rules": {
+      "plugin/no-unsupported-browser-features": [
+        true,
+        {
+          "ignore": [
+            "outline",
+            "flexbox",
+            "outline",
+            "viewport-units",
+            "will-change",
+            "border-radius",
+            "css-boxshadow"
+          ]
+        }
+      ]
+    }
+  },
+  "homepage": "https://github.com/xwp/frontend-test#readme",
+  "devDependencies": {
+    "undercurrent": "github:xwp/undercurrent",
+    "scss-query": "^1.0.1"
+  }
+}
