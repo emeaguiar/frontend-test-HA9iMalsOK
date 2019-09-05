@@ -310,6 +310,10 @@ img.latex {
   border-radius: 50px;
 }
 
+.follow-link:visited {
+  color: #000000;
+}
+
 .author-card .follow-link {
   display: inline-block;
   margin-bottom: 10px;

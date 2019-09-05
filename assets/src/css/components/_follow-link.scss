@@ -2,6 +2,10 @@
 	background-color: $follow-link-bg;
 	border-radius: 50px;
 
+	&:visited {
+		color: $follow-link-txt;
+	}
+
 	.author-card & {
 		display: inline-block;
 		margin-bottom: 10px;
