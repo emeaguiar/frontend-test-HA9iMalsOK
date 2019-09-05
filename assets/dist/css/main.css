@@ -275,4 +275,45 @@ img.latex {
   max-width: 100%;
 }
 
+.author-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.author-card > .avatar {
+  border-radius: 50%;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.author-card > .avatar picture {
+  display: block;
+}
+
+.author-card > .avatar .image {
+  display: block;
+}
+
+.author-card > .content .meta {
+  text-align: center;
+}
+
+.author-card > .content .follow-link {
+  padding: 10px 25px;
+}
+
+.follow-link {
+  background-color: #aaaaaa;
+  border-radius: 50px;
+}
+
+.author-card .follow-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=main.css.map */
