@@ -5,10 +5,10 @@
 
 	& > .avatar {
 		border-radius: 50%;
-		height: 100px;
+		height: 74px;
 		overflow: hidden;
 		margin: 0 auto;
-		width: 100px;
+		width: 75px;
 	}
 
 	& > .avatar picture {
@@ -21,9 +21,5 @@
 
 	& > .content .meta {
 		text-align: center;
-	}
-
-	& > .content .follow-link {
-		padding: 10px 25px;
 	}
 }

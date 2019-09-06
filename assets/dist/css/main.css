@@ -284,10 +284,10 @@ img.latex {
 
 .author-card > .avatar {
   border-radius: 50%;
-  height: 100px;
+  height: 74px;
   overflow: hidden;
   margin: 0 auto;
-  width: 100px;
+  width: 75px;
 }
 
 .author-card > .avatar picture {
@@ -302,23 +302,41 @@ img.latex {
   text-align: center;
 }
 
-.author-card > .content .follow-link {
-  padding: 10px 25px;
-}
-
 .follow-link {
-  background-color: #aaaaaa;
+  background-color: #ebebeb;
   border-radius: 50px;
 }
 
 .follow-link:visited {
-  color: #000000;
+  color: #222222;
 }
 
 .author-card .follow-link {
   display: inline-block;
   margin-bottom: 10px;
   margin-top: 10px;
+  padding: 4px 25px 4px 4px;
+}
+
+.author-card .follow-link .icon {
+  margin-right: 19px;
+}
+
+.icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.icon__facebook {
+  background: #3a5795;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.icon__facebook svg {
+  height: 12px;
+  width: 6px;
 }
 
 /*# sourceMappingURL=main.css.map */
