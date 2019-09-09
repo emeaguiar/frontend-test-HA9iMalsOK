@@ -581,7 +581,7 @@ img.latex {
   margin-bottom: -4px;
 }
 
-.stories__trigger {
+.stories .a11y-tip__trigger {
   color: #19acf0;
 }
 
