@@ -37,7 +37,7 @@ export default class Bio {
 	 * Close and add icon
 	 */
 	collapse() {
-		const { element } = this;
+		const { element, trigger } = this;
 
 		if ( ! element ) {
 			return;
@@ -45,13 +45,17 @@ export default class Bio {
 
 		element.classList.add( 'bio__collapsed' );
 		element.setAttribute( 'aria-expanded', 'false' );
+
+		if ( trigger ) {
+			trigger.classList.remove( 'more__collapsed' );
+		}
 	}
 
 	/**
 	 * Open and remove icon
 	 */
 	expand() {
-		const { element } = this;
+		const { element, trigger } = this;
 
 		if ( ! element ) {
 			return;
@@ -59,5 +63,9 @@ export default class Bio {
 
 		element.classList.remove( 'bio__collapsed' );
 		element.setAttribute( 'aria-expanded', 'true' );
+
+		if ( trigger ) {
+			trigger.classList.add( 'more__collapsed' );
+		}
 	}
 }

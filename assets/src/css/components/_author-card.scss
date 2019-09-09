@@ -56,5 +56,9 @@
 		position: relative;
 		width: 35px;
 		z-index: 1;
+
+		&__collapsed .icon {
+			transform: rotateX( 190deg );
+		}
 	}
 }
