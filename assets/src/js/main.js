@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import tooltip from '@10up/component-tooltip';
+import Bio from './components/bio';
 
 ( function() {
 	// eslint-disable-next-line no-console
@@ -11,4 +12,8 @@ import tooltip from '@10up/component-tooltip';
 		// eslint-disable-next-line no-console
 		console.log( 'tooltip init' );
 	} );
+
+	const bio = new Bio();
+
+	bio.init();
 }() );
