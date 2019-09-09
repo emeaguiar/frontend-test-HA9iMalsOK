@@ -1,6 +1,8 @@
 .follow-link {
 	background-color: $follow-link-bg;
 	border-radius: 50px;
+	font-size: 0.875rem;
+	line-height: 1.8;
 
 	&:visited {
 		color: $follow-link-txt;

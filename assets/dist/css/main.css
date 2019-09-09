@@ -305,6 +305,8 @@ img.latex {
 .follow-link {
   background-color: #ebebeb;
   border-radius: 50px;
+  font-size: 0.875rem;
+  line-height: 1.8;
 }
 
 .follow-link:visited {
@@ -332,11 +334,12 @@ img.latex {
   background: #3a5795;
   border-radius: 50%;
   color: #ffffff;
+  margin-bottom: -1px;
 }
 
 .icon__facebook svg {
   height: 12px;
-  width: 6px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
