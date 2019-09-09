@@ -1,17 +1,22 @@
 .icon {
 	display: inline-block;
-	height: 25px;
-	width: 25px;
 
 	&__facebook {
 		background: $chambray;
 		border-radius: 50%;
 		color: $white;
+		height: 25px;
 		margin-bottom: -1px;
+		width: 25px;
 
 		& svg {
 			height: 12px;
 			width: 100%;
 		}
+	}
+
+	&__arrow {
+		color: $link;
+		width: 15px;
 	}
 }

@@ -326,20 +326,25 @@ img.latex {
 
 .icon {
   display: inline-block;
-  height: 25px;
-  width: 25px;
 }
 
 .icon__facebook {
   background: #3a5795;
   border-radius: 50%;
   color: #ffffff;
+  height: 25px;
   margin-bottom: -1px;
+  width: 25px;
 }
 
 .icon__facebook svg {
   height: 12px;
   width: 100%;
+}
+
+.icon__arrow {
+  color: #19acf0;
+  width: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
