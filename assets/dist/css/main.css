@@ -347,4 +347,12 @@ img.latex {
   width: 15px;
 }
 
+.stories .icon svg {
+  margin-bottom: -4px;
+}
+
+.stories__trigger {
+  color: #19acf0;
+}
+
 /*# sourceMappingURL=main.css.map */
