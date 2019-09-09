@@ -24,18 +24,21 @@
 	}
 
 	.bio {
-		max-height: 120px;
-		overflow: hidden;
 		position: relative;
 
-		&::after {
-			background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0 ), #ffffff );
-			bottom: 0;
-			content: '';
-			display: block;
-			height: 100px;
-			position: absolute;
-			width: 100%;
+		&__collapsed {
+			max-height: 120px;
+			overflow: hidden;
+
+			&::after {
+				background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0 ), #ffffff );
+				bottom: 0;
+				content: '';
+				display: block;
+				height: 100px;
+				position: absolute;
+				width: 100%;
+			}
 		}
 	}
 
