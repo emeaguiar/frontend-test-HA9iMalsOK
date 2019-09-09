@@ -13,7 +13,7 @@ import Bio from './components/bio';
 		console.log( 'tooltip init' );
 	} );
 
-	const bio = new Bio();
+	const bio = new Bio( '#bio' );
 
-	bio.init();
+	bio.collapse();
 }() );
