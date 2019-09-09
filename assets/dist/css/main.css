@@ -532,6 +532,17 @@ img.latex {
   text-align: center;
 }
 
+.author-card .bio .more {
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 0 0.3px rgba(0, 0, 0, 0.02);
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  margin: auto;
+  width: 35px;
+}
+
 .follow-link {
   background-color: #ebebeb;
   border-radius: 50px;
@@ -575,6 +586,11 @@ img.latex {
 .icon__arrow {
   color: #19acf0;
   width: 15px;
+}
+
+.bio .icon__arrow {
+  color: #979797;
+  height: 17px;
 }
 
 .stories .icon svg {

@@ -18,6 +18,11 @@
 	&__arrow {
 		color: $link;
 		width: 15px;
+
+		.bio & {
+			color: $bio-arrow;
+			height: 17px;
+		}
 	}
 
 	.stories & svg {
