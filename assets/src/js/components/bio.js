@@ -1,13 +1,24 @@
+/**
+ * Controls bio collapsed or expanded status
+ */
 export default class Bio {
-	constructor( element ) {
-		this.element = window.document.querySelector( element );
-		this.trigger = window.document.querySelector( `${ element } ~ .more` );
+	/**
+	 * Init
+	 * Save elements in cache
+	 * @param {string} selector Bio element css unique selector
+	 */
+	constructor( selector ) {
+		this.element = window.document.querySelector( selector );
+		this.trigger = window.document.querySelector( `${ selector } ~ .more` );
 
 		if ( this.trigger ) {
 			this.trigger.addEventListener( 'click', () => this.toggleBio() );
 		}
 	}
 
+	/**
+	 * Expand or collapse based on current status
+	 */
 	toggleBio() {
 		const { element } = this;
 
@@ -22,6 +33,9 @@ export default class Bio {
 		}
 	}
 
+	/**
+	 * Close and add icon
+	 */
 	collapse() {
 		const { element } = this;
 
@@ -33,6 +47,9 @@ export default class Bio {
 		element.setAttribute( 'aria-expanded', 'false' );
 	}
 
+	/**
+	 * Open and remove icon
+	 */
 	expand() {
 		const { element } = this;
 
