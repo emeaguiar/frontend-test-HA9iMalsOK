@@ -1,8 +1,14 @@
 .follow-link {
 	background-color: $follow-link-bg;
 	border-radius: 50px;
+	color: $follow-link-txt;
 	font-size: 0.875rem;
 	line-height: 1.8;
+
+	&:hover {
+		background-color: darken( $follow-link-bg, 5% );
+		text-decoration: none;
+	}
 
 	&:visited {
 		color: $follow-link-txt;
