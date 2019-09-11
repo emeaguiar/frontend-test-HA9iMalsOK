@@ -30,7 +30,7 @@
 					</a>
 				</div>
 
-				<div class="stories -closed a11y-tip a11y-tip--toggle">
+				<div class="stories stories__collapsed">
 					<button class="stories__trigger" aria-label="See 2 new stries from Mister Author" aria-controls="stories__dropdown">
 						2 New Stories
 
@@ -41,9 +41,10 @@
 
 					<ul
 						id="stories__dropdown"
-						class="stories__dropdown"
+						class="stories__dropdown stories__dropdown_collapsed"
 						role="navigation"
 						aria-label="Mister Name most recent stories"
+						aria-expanded="false"
 					>
 						<li>
 							<h2 class="stories__title">
