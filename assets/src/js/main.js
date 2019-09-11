@@ -1,8 +1,18 @@
 /* eslint-disable no-unused-vars */
 import Bio from './components/bio';
 
-( function() {
-	const bio = new Bio( '#bio' );
+class AuthorCard {
+	constructor() {
+		this.bio = new Bio( '#bio' );
+	}
 
-	bio.collapse();
-}() );
+	init() {
+		if ( this.bio ) {
+			this.bio.collapse();
+		}
+	}
+}
+
+const authorCard = new AuthorCard();
+
+authorCard.init();
