@@ -398,8 +398,13 @@ img.latex {
   height: 17px;
 }
 
-.stories .icon svg {
+.icon__arrow_down svg {
   margin-bottom: -4px;
+}
+
+.icon__arrow_right svg {
+  height: 12px;
+  margin-bottom: -1px;
 }
 
 .stories {
