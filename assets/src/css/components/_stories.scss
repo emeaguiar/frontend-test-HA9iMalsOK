@@ -1,12 +1,26 @@
 .stories {
 	margin-bottom: 20px;
 	margin-top: 34px;
+	position: relative;
 
 	&__trigger {
 		color: $link;
 	}
 
 	&__dropdown {
-		display: none;
+		background-color: $stories-bg;
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding: 5px 0;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__title {
+		font-size: 0.875rem;
+		font-weight: 400;
+		padding: 5px 0;
 	}
 }

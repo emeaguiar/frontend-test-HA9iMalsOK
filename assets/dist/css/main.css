@@ -282,6 +282,10 @@ img.latex {
   padding: 15px;
 }
 
+.author-card a {
+  color: #19acf0;
+}
+
 .author-card > .avatar {
   border-radius: 50%;
   height: 74px;
@@ -341,7 +345,6 @@ img.latex {
 .follow-link {
   background-color: #ebebeb;
   border-radius: 50px;
-  color: #222222;
   font-size: 0.875rem;
   line-height: 1.8;
 }
@@ -356,6 +359,7 @@ img.latex {
 }
 
 .author-card .follow-link {
+  color: #222222;
   display: inline-block;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -401,6 +405,7 @@ img.latex {
 .stories {
   margin-bottom: 20px;
   margin-top: 34px;
+  position: relative;
 }
 
 .stories__trigger {
@@ -408,7 +413,20 @@ img.latex {
 }
 
 .stories__dropdown {
-  display: none;
+  background-color: #ffffff;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.stories__title {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 5px 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,10 @@
 	flex-direction: column;
 	padding: 15px;
 
+	a {
+		color: $link;
+	}
+
 	& > .avatar {
 		border-radius: 50%;
 		height: 74px;

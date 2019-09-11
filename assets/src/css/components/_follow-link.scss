@@ -1,7 +1,6 @@
 .follow-link {
 	background-color: $follow-link-bg;
 	border-radius: 50px;
-	color: $follow-link-txt;
 	font-size: 0.875rem;
 	line-height: 1.8;
 
@@ -15,6 +14,7 @@
 	}
 
 	.author-card & {
+		color: $follow-link-txt;
 		display: inline-block;
 		margin-bottom: 10px;
 		margin-top: 10px;
