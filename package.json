@@ -64,7 +64,5 @@
     "undercurrent": "github:xwp/undercurrent",
     "scss-query": "^1.0.1"
   },
-  "dependencies": {
-    "@10up/component-tooltip": "^1.0.1"
-  }
+  "dependencies": {}
 }
