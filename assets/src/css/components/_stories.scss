@@ -1,6 +1,12 @@
 .stories {
+	margin-bottom: 20px;
+	margin-top: 34px;
 
-	.a11y-tip__trigger {
+	&__trigger {
 		color: $link;
+	}
+
+	&__dropdown {
+		display: none;
 	}
 }
