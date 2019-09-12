@@ -321,7 +321,7 @@ img.latex {
 @media (min-width: 768px) {
   .author-card .content {
     order: 1;
-    width: 70%;
+    width: 492px;
   }
 }
 
@@ -331,6 +331,7 @@ img.latex {
 
 @media (min-width: 768px) {
   .author-card .content .meta {
+    display: flex;
     text-align: left;
   }
 }
@@ -395,6 +396,12 @@ img.latex {
   padding: 4px 25px 4px 4px;
 }
 
+@media (min-width: 768px) {
+  .author-card .follow-link {
+    margin-left: 10px;
+  }
+}
+
 .author-card .follow-link .icon {
   margin-right: 19px;
 }
@@ -440,6 +447,12 @@ img.latex {
   margin-bottom: 20px;
   margin-top: 34px;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .stories {
+    margin-top: 5px;
+  }
 }
 
 .stories__trigger {

@@ -38,13 +38,14 @@
 	.content {
 		@media ( query( min, tablet ) ) {
 			order: 1;
-			width: 70%;
+			width: 492px;
 		}
 
 		.meta {
 			text-align: center;
 
 			@media ( query( min, tablet ) ) {
+				display: flex;
 				text-align: left;
 			}
 		}

@@ -20,6 +20,10 @@
 		margin-top: 10px;
 		padding: 4px 25px 4px 4px;
 
+		@media ( query( min, tablet ) ) {
+			margin-left: 10px;
+		}
+
 		.icon {
 			margin-right: 19px;
 		}

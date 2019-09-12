@@ -3,6 +3,10 @@
 	margin-top: 34px;
 	position: relative;
 
+	@media ( query( min, tablet ) ) {
+		margin-top: 5px;
+	}
+
 	&__trigger {
 		color: $link;
 
