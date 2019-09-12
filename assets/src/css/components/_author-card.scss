@@ -85,6 +85,10 @@
 		width: 35px;
 		z-index: 1;
 
+		@media ( query( min, tablet ) ) {
+			display: none;
+		}
+
 		&__collapsed .icon {
 			transform: rotateX( 190deg );
 		}

@@ -368,6 +368,12 @@ img.latex {
   z-index: 1;
 }
 
+@media (min-width: 768px) {
+  .author-card .more {
+    display: none;
+  }
+}
+
 .author-card .more__collapsed .icon {
   transform: rotateX(190deg);
 }

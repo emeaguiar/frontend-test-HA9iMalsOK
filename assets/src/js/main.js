@@ -12,16 +12,21 @@ class AuthorCard {
 	constructor() {
 		this.bio = new Bio( '#bio' );
 		this.stories = new Stories( '#stories__dropdown' );
+		this.tabletWidth = 768;
 	}
 
 	init() {
-		if ( this.bio ) {
+		if ( this.bio && this.isMobile() ) {
 			this.bio.collapse();
 		}
 
 		if ( this.stories ) {
 			this.stories.collapse();
 		}
+	}
+
+	isMobile() {
+		return window.outerWidth < this.tabletWidth;
 	}
 }
 
