@@ -12,21 +12,24 @@ class AuthorCard {
 	constructor() {
 		this.bio = new Bio( '#bio' );
 		this.stories = new Stories( '#stories__dropdown' );
-		this.tabletWidth = 768;
+		this.tabletWidth = 767;
 	}
 
 	init() {
-		if ( this.bio && this.isMobile() ) {
-			this.bio.collapse();
-		}
-
 		if ( this.stories ) {
 			this.stories.collapse();
 		}
+
+		window.matchMedia( `(max-width: ${ this.tabletWidth }px)` )
+			.addListener( ( event ) => this.toggleBio( event ) );
 	}
 
-	isMobile() {
-		return window.outerWidth < this.tabletWidth;
+	toggleBio( event ) {
+		if ( this.bio && event.matches ) {
+			this.bio.collapse();
+		} else {
+			this.bio.expand();
+		}
 	}
 }
 
