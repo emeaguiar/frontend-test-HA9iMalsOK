@@ -15,6 +15,9 @@ class AuthorCard {
 		this.tabletWidth = 767;
 	}
 
+	/**
+	 * Init components
+	 */
 	init() {
 		if ( this.stories ) {
 			this.stories.collapse();
@@ -24,6 +27,10 @@ class AuthorCard {
 			.addListener( ( event ) => this.toggleBio( event ) );
 	}
 
+	/**
+	 * Turn Bio on or off depending on media query
+	 * @param {Object} event Triggered Matchmedia object
+	 */
 	toggleBio( event ) {
 		if ( this.bio && event.matches ) {
 			this.bio.collapse();
