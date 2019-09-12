@@ -1,10 +1,17 @@
 .author-card {
 	display: flex;
 	flex-direction: column;
+	margin: auto;
+	max-width: 1000px;
 	padding: 15px;
 
 	@media ( query( min, tablet ) ) {
 		flex-direction: row;
+		padding: 25px;
+	}
+
+	@media ( query( min, desktop ) ) {
+		padding: 45px;
 	}
 
 	a {
@@ -38,7 +45,7 @@
 	.content {
 		@media ( query( min, tablet ) ) {
 			order: 1;
-			width: 492px;
+			width: 70%;
 		}
 
 		.meta {

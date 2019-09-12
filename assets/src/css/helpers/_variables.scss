@@ -24,7 +24,7 @@ $stories-bg: $white;
 // Based on: https://www.npmjs.com/package/scss-query
 $g-breakpoint-mobile: 480px;
 $g-breakpoint-tablet: 768px;
-$g-breakpoint-desktop: 900px;
+$g-breakpoint-desktop: 1024px;
 
 $query-breakpoints: (
 	'mobile': $g-breakpoint-mobile,
