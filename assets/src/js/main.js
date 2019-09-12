@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import Bio from './components/bio';
 import Stories from './components/stories';
 
