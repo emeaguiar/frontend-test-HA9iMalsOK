@@ -5,7 +5,7 @@ import Accordion from './accordion';
  */
 export default class Bio extends Accordion {
 	/**
-	 * Init
+	 * Init parent class
 	 * Save elements in cache
 	 * @param {string} selector Bio element css unique selector
 	 */
