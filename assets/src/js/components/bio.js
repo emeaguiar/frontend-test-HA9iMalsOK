@@ -1,71 +1,18 @@
+import Accordion from './accordion';
+
 /**
  * Controls bio collapsed or expanded status
  */
-export default class Bio {
+export default class Bio extends Accordion {
 	/**
 	 * Init
 	 * Save elements in cache
 	 * @param {string} selector Bio element css unique selector
 	 */
 	constructor( selector ) {
-		this.element = window.document.querySelector( selector );
-		this.trigger = window.document.querySelector( `${ selector } ~ .more` );
+		super( selector, `${ selector } ~ .more` );
 
-		if ( this.trigger ) {
-			this.trigger.addEventListener( 'click', () => this.toggleBio() );
-		}
-	}
-
-	/**
-	 * Expand or collapse based on current status
-	 */
-	toggleBio() {
-		const { element } = this;
-
-		if ( ! element ) {
-			return;
-		}
-
-		if ( element.classList.contains( 'bio__collapsed' ) ) {
-			this.expand();
-		} else {
-			this.collapse();
-		}
-	}
-
-	/**
-	 * Close and add icon
-	 */
-	collapse() {
-		const { element, trigger } = this;
-
-		if ( ! element ) {
-			return;
-		}
-
-		element.classList.add( 'bio__collapsed' );
-		element.setAttribute( 'aria-expanded', 'false' );
-
-		if ( trigger ) {
-			trigger.classList.remove( 'more__collapsed' );
-		}
-	}
-
-	/**
-	 * Open and remove icon
-	 */
-	expand() {
-		const { element, trigger } = this;
-
-		if ( ! element ) {
-			return;
-		}
-
-		element.classList.remove( 'bio__collapsed' );
-		element.setAttribute( 'aria-expanded', 'true' );
-
-		if ( trigger ) {
-			trigger.classList.add( 'more__collapsed' );
-		}
+		this.collapsedClass = 'bio__collapsed';
+		this.triggerCollapsedClass = 'more__collapsed';
 	}
 }
