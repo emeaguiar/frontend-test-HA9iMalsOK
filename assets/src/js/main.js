@@ -18,12 +18,15 @@ class AuthorCard {
 	 * Init components
 	 */
 	init() {
+		const matchMedia = window.matchMedia( `(max-width: ${ this.tabletWidth }px)` );
+
 		if ( this.stories ) {
 			this.stories.collapse();
 		}
 
-		window.matchMedia( `(max-width: ${ this.tabletWidth }px)` )
-			.addListener( ( event ) => this.toggleBio( event ) );
+		matchMedia.addListener( ( event ) => this.toggleBio( event ) );
+
+		this.toggleBio( matchMedia );
 	}
 
 	/**
