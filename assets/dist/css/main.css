@@ -282,11 +282,17 @@ img.latex {
   padding: 15px;
 }
 
+@media (min-width: 768px) {
+  .author-card {
+    flex-direction: row;
+  }
+}
+
 .author-card a {
   color: #19acf0;
 }
 
-.author-card > .avatar {
+.author-card .avatar {
   border-radius: 50%;
   height: 74px;
   overflow: hidden;
@@ -294,16 +300,39 @@ img.latex {
   width: 75px;
 }
 
-.author-card > .avatar picture {
+@media (min-width: 768px) {
+  .author-card .avatar {
+    align-self: center;
+    border-radius: 0;
+    height: 159px;
+    order: 2;
+    width: 180px;
+  }
+}
+
+.author-card .avatar picture {
   display: block;
 }
 
-.author-card > .avatar .image {
+.author-card .avatar .image {
   display: block;
 }
 
-.author-card > .content .meta {
+@media (min-width: 768px) {
+  .author-card .content {
+    order: 1;
+    width: 70%;
+  }
+}
+
+.author-card .content .meta {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .author-card .content .meta {
+    text-align: left;
+  }
 }
 
 .author-card .bio {
