@@ -417,15 +417,22 @@ img.latex {
   color: #19acf0;
 }
 
+.stories__trigger_collapsed .icon {
+  transform: rotateX(180deg);
+}
+
 .stories__dropdown {
   background-color: #ffffff;
-  display: none;
   list-style: none;
   margin: 0;
   padding: 5px 0;
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+
+.stories__dropdown_collapsed {
+  display: none;
 }
 
 .stories__title {

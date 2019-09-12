@@ -5,17 +5,24 @@
 
 	&__trigger {
 		color: $link;
+
+		&_collapsed .icon {
+			transform: rotateX( 180deg );
+		}
 	}
 
 	&__dropdown {
 		background-color: $stories-bg;
-		display: none;
 		list-style: none;
 		margin: 0;
 		padding: 5px 0;
 		position: absolute;
 		width: 100%;
 		z-index: 1;
+
+		&_collapsed {
+			display: none;
+		}
 	}
 
 	&__title {
